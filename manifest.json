@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Salesforce Utils",
+    "version": "1.1",
+    "description": "Log in anonymously and inspect/edit Salesforce record data directly in your browser. The ultimate developer & admin toolkit.",
+    "permissions": [
+      "tabs",
+      "scripting",
+      "cookies",
+      "contextMenus",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://*.salesforce.com/",
+      "https://*.visual.force.com/",
+      "https://*.lightning.force.com/"
+    ],
+    
+    "incognito": "split",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": "icons/128.png",
+      "default_title": "Quick Login As"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "icons": {
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+    }
+  }

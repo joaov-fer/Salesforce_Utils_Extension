@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Inspector</title>
+    <link rel="stylesheet" href="inspector.css">
+</head>
+<body>
+    <div id="toast-container"></div>
+
+    <div class="container">
+        <div class="main-actions" id="actions-toolbar" style="display:none;">
+            <button class="action-btn btn-edit" id="btn-mass-edit">Edit</button>
+            <button class="action-btn btn-save" id="btn-mass-save" style="display:none;">Save Changes</button>
+            <button class="action-btn btn-cancel" id="btn-mass-cancel" style="display:none;">Cancel</button>
+        </div>
+
+        <h1>Record Inspector</h1>
+        <h2 id="record-info"></h2>
+        
+        <div id="loading">Loading record data and metadata...</div>
+        <div id="error" style="display:none;"></div>
+
+        <input type="text" id="search-input" placeholder="Search by Field Label, API Name or Value..." style="display:none;">
+        
+        <table id="record-data-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Field Label</th>
+                    <th>API Name</th>
+                    <th>Type</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="record-data-body"></tbody>
+        </table>
+    </div>
+
+    <script src="inspector.js"></script>
+</body>
+</html>

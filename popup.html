@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Login</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="quickLoginChrome">
+        <div id="menu" style="display: none;">
+            <div class="menu-row">
+                <label for="viewDropdown">View:</label>
+                <span id="view-dropdown-container"></span>
+            </div>
+            <div class="menu-row hideColumn">
+                <button id="toggleAllColumns">All Columns</button>
+            </div>
+            <div class="menu-row">
+                <label for="txtFilter">Filter:</label>
+                <input type="text" id="txtFilter" />
+                <span id="spFilterStatus"></span>
+            </div>
+            <div class="menu-row loginUsersOnlyRow">
+                <input type="checkbox" id="toggleLoginAsFilter"/>
+                <label for="toggleLoginAsFilter">Show Only Users With Login</label>
+            </div>
+            <div class="menu-row" id="navigationButtons"></div>
+        </div>
+        <div id="loading">Loading...</div>
+        <div id="users"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

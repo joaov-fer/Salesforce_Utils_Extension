@@ -1,0 +1,118 @@
+body {
+    padding: 10px;
+    /* margin: 0; */
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    /* font-size: 14px; */
+    width: 600px;
+    background-color: #f9f9f9;
+    /* color: #333; */
+}
+
+a { color: #000000; }
+
+#quickLoginChrome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#loading {
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Menu and Form Styles */
+.menu-row {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-row label {
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070d2;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #005fb2;
+}
+
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+
+/* Enhanced Table Styles */
+table {
+    border-collapse: collapse;
+    width: 600px;
+    /* margin-top: 15px; */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the border-radius is applied to the table cells */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Table Header */
+tr.headerRow th {
+    background-color: #f2f3f3;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Table Body */
+tr.dataRow {
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+tr.dataRow:hover {
+    background-color: #e3f3ff;
+}
+
+tr.dataRow:last-child td {
+    border-bottom: none;
+}
+
+/* Action Column */
+td.actionColumn a {
+    color: #015BA7;
+    font-weight: 600;
+    text-decoration: none;
+}
+td.actionColumn a:hover {
+    text-decoration: underline;
+}
+
+.hideColumn {
+    display: none;
+}
