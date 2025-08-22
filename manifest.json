@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Salesforce Utils",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Log in anonymously and inspect/edit Salesforce record data directly in your browser. The ultimate developer & admin toolkit.",
     "permissions": [
       "tabs",
