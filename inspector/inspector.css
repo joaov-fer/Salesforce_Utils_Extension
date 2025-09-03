@@ -221,3 +221,39 @@
         .toast.success { background-color: var(--success-color); }
         .toast.error { background-color: var(--danger-color); }
         .toast.info { background-color: var(--info-color); }
+
+
+
+        /* Estilo para links de ID clicáveis */
+#record-data-body a {
+    color: #0070d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#record-data-body a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o container de valor + fórmula */
+.value-formula-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.formula-part {
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid #dddbda; /* Cor de borda do Salesforce */
+}
+
+.formula-code {
+    background-color: #f3f2f2; /* Cor de fundo sutil */
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    color: #3e3e3c;
+    white-space: pre-wrap; /* Quebra de linha em fórmulas longas */
+    word-break: break-all;
+}
