@@ -4,7 +4,8 @@
 const sfPatterns = [
   ".salesforce.com/",
   ".visual.force.com/",
-  ".lightning.force.com/"
+  ".lightning.force.com/",
+  ".salesforce-setup.com/"
 ];
 
 // Função para verificar a URL e habilitar/desabilitar a ação da extensão
@@ -55,7 +56,8 @@ function getSfHost(urlEntry) {
   // Verifica se é um domínio do Salesforce
   const isSalesforceDomain = currentDomain.includes('salesforce.com') || 
                             currentDomain.includes('force.com') || 
-                            currentDomain.includes('cloudforce.com');
+                            currentDomain.includes('cloudforce.com') ||
+                            currentDomain.includes('salesforce-setup.com');
   
   if (!isSalesforceDomain) {
     sendResponse(null);
@@ -146,7 +148,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // Verifica se é um domínio do Salesforce
     const isSalesforceDomain = currentDomain.includes('salesforce.com') || 
                               currentDomain.includes('force.com') || 
-                              currentDomain.includes('cloudforce.com');
+                              currentDomain.includes('cloudforce.com') ||
+                              currentDomain.includes('salesforce-setup.com');
     
     if (!isSalesforceDomain) {
 
