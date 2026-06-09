@@ -5,7 +5,9 @@ const sfPatterns = [
   ".salesforce.com/",
   ".visual.force.com/",
   ".lightning.force.com/",
-  ".salesforce-setup.com/"
+  ".salesforce-setup.com/",
+  ".sandbox.force.com/",
+  ".force.com/",
 ];
 
 // Função para verificar a URL e habilitar/desabilitar a ação da extensão
